@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="airtel" class="com.ust.FirstMaven.Network.Airtel"></bean>
+<bean id="jio" class="com.ust.FirstMaven.Network.Jio"></bean>
+
+<bean id="emp" class="com.ust.FirstMaven.Network.Employee">
+	<!--<property name="employeeId" value="184174"></property>
+	<property name="name" value="Raviteja"></property>
+	<property name="salary" value="10000.00"></property>-->
+	<constructor-arg value="184174" type="int"/>
+	<constructor-arg value="Raviteja" type="String"/>
+	<constructor-arg value="10000" type="double"/>
+</bean>
+  
+</beans>  
