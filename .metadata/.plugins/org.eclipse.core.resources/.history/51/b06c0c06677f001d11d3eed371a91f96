@@ -1,0 +1,16 @@
+package com.ust;
+
+public class Vechile {
+	String name;
+	String modelName;
+    int noOfWheels;
+	public Vechile(String name, String modelName, int noOfWheels) {
+		super();
+		this.name = name;
+		this.modelName = modelName;
+		this.noOfWheels = noOfWheels;
+	}
+    
+    
+
+}

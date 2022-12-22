@@ -1,0 +1,32 @@
+package com.ust.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+
+public class HashMapExample {
+
+	public static void main(String[] args) {
+	
+		Map<Integer,Employee> map=new HashMap<Integer,Employee>();
+		Employee e1=new Employee("Ravi");
+		Employee e2=new Employee("Teja");
+		Employee e3=new Employee("Sri");
+		map.put(101, e1);
+		map.put(102, e1);
+		map.put(103, e1);
+		
+		map.entrySet().stream().filter(f->f.getValue().name.toUpperCase().startsWith("S").collect(Collectors.toMap(null, null)))
+		
+		for(Map.Entry<Integer,Employee> m : map.entrySet()){    
+			int key=m.getKey();
+			Employee e=m.getValue();
+			if(e.name.startsWith("S"))
+		    System.out.println(key+" "+m.getValue());    
+		   }  
+		
+
+	}
+
+}

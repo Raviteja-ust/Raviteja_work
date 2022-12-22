@@ -1,0 +1,26 @@
+package com.ust.collection;
+
+import java.util.LinkedList;
+
+public class LinkedListExample {
+
+	public static void main(String[] args) {
+		LinkedList<String> l = new LinkedList<String>();
+		l.add("Indu");
+		l.add("RamaKanth");
+		l.add("Harika");
+		l.add("Ravi");
+		l.add("sravani");
+		l.add("siri");
+		l.add("sai");
+
+		for (String str : l) {
+			if (str.startsWith("s")) {
+				System.out.println(str);
+			}
+
+		}
+
+	}
+
+}

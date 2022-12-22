@@ -1,0 +1,34 @@
+package com.ust.ticketCal;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class TicketService {
+
+	public List<TickectInfo> calculateTicketPrice(){
+		
+		List<TickectInfo> tickectInfo = new TicketDao().getTicketInfo();
+		
+		//tickectInfo.forEach(a-> System.out.println(a.getTicketId()+","+a.getName()+","+a.getSource()+","+a.getDestination()+","+a.getKm()+","+(a.getKm()*5)));
+		
+		Map<TickectInfo,Integer> result=new HashMap<>();
+		int price=5;
+		
+		for(TickectInfo tinfo:tickectInfo)
+		{
+			int km = tinfo.getKm();
+			Double amount=km*price;
+		}
+		
+		
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		TicketService ts=new TicketService();
+		ts.calculateTicketPrice();
+
+	}
+
+}

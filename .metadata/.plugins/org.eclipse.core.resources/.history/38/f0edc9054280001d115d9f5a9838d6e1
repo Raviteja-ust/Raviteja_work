@@ -1,0 +1,28 @@
+package com.ust;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test {
+
+	static int power(int x,int n) {
+		
+		
+		int r=1;
+		while (n!=0) {
+			r*=x;
+			--n;
+		}
+		return r;
+	}
+	public static void main(String[] args) {
+		int x=2;
+		int n=3;
+		long res = power(x,n);
+		System.out.println("a"+res);
+}
+
+	
+}
+
+

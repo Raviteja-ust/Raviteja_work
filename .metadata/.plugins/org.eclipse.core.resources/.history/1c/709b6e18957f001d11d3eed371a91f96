@@ -1,0 +1,15 @@
+package com.ust.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class HashMapExample {
+
+	public static void main(String[] args) {
+	
+		Map<Integer,Employee> map=new HashMap<Integer,Employee>();
+
+	}
+
+}

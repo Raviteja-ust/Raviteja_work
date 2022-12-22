@@ -1,0 +1,33 @@
+package com.ust;
+
+public class Car extends Vechile{
+
+	String brand;
+	String model;
+	
+	void wheels(int noOfWheels)
+	{
+		super.wheels(noOfWheels);
+		System.out.println("Brand:"+brand+"model:"+model+"noOfWheels:"+noOfWheels);
+	}
+
+	public Car(String brand, String model) {
+		super();
+		this.brand = brand;
+		this.model = model;
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String args[])
+	{
+		Car c=new Car("BMW", "Q1");
+		c.wheels(4);
+		
+	}
+	
+	
+
+	
+}

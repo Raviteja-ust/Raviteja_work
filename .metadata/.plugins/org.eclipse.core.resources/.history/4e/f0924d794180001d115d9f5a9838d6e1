@@ -1,0 +1,27 @@
+package com.ust;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test {
+
+	static int power(int x,int y) {
+		if(y==0)
+			return x;
+		int answer=x;
+		int increment = x;
+		int i,j;
+		for(int i=1;i1<y;i1++) {
+			
+		}
+	}
+	public static void main(String[] args) {
+		int x=2;
+		int y=3;
+		System.out.println("%d",power(x,y));
+}
+
+	
+}
+
+

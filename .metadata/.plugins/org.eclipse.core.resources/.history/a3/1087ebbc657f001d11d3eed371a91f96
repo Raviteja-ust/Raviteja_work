@@ -1,0 +1,8 @@
+package com.ust;
+
+public class Vechile {
+	String name;
+	String modelName;
+    int noOfWheels;
+
+}

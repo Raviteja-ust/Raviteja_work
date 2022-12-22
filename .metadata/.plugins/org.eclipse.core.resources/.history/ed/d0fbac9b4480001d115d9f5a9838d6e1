@@ -1,0 +1,22 @@
+package com.ust;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test {
+static boolean b;
+	
+	public static void main(String[] args) {
+		int o = 10;
+		boolean b=false;
+		if((b==true)&&((o+=10)==20)) {
+			System.out.println("yes"+o);
+		}else {
+			System.out.println("no"+o);
+		}
+		
+}
+}
+
+

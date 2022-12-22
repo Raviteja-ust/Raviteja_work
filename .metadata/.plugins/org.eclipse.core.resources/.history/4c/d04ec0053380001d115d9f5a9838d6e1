@@ -1,0 +1,12 @@
+package com.ust;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		String mystring="";
+		System.out.println(mystring);
+		
+	}
+
+}

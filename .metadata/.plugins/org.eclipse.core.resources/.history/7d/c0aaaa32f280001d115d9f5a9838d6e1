@@ -1,0 +1,27 @@
+package com.ust.ticketCal;
+
+import java.util.List;
+
+public class TicketService {
+
+	public List<TickectInfo> calculateTicketPrice(){
+		
+		List<TickectInfo> TickectInfo = new TicketDao().getTicketInfo();
+		
+		TickectInfo.forEach(a-> System.out.println(a.getTicketId()+","+a.getName()+","+a.getSource()+","+a.getDestination()+","+a.getKm()+","+a.setAmount(a.getKm()*5));
+		
+		//ticketInfo.stream().map(a->
+		//TickectInfo t=new TickectInfo();
+		//a.getKm()*5
+		//		).collect(Collectors.toList());
+		
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		TicketService ts=new TicketService();
+		ts.calculateTicketPrice();
+
+	}
+
+}

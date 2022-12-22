@@ -1,0 +1,52 @@
+package com.ust.EmployeeTax;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+import com.ust.employee.Model;
+
+public class EmployeeService {
+	
+	public List<EmployeeeModel> getEmployeeTaxDetails() {
+		
+		List<EmployeeeModel> employeeDetails = new EmployeeDao().getEmployeeDetails();
+		
+		Map<Integer,EmployeeeModel> map=new HashMap<>();
+		
+		for(EmployeeeModel empModel:employeeDetails) {
+			
+			if(empModel.getSalary()>0 && empModel.getSalary()<25000)
+			{
+				EmployeeeModel model=map.get(empModel.getSalary());
+				
+				//Model model=map.get(elist.getSalary());
+				map.put((int) empModel.getSalary(), new EmployeeeModel(empModel.getEmployeeId(),empModel.getEmployeeName(),empModel.getLocation(),empModel.getSalary()+model.getSalary()));
+			
+				
+			}
+		}
+		
+		/*employeeDetails.stream().filter(a -> {
+			if(a.getSalary()>)
+			
+		}
+).collect(Collectors.toList());*/
+		
+		
+		
+		
+		return null;
+	
+	}
+	
+	
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

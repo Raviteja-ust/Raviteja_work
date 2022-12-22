@@ -1,0 +1,13 @@
+package com.ust;
+
+public class Car extends Vechile{
+
+	public Car(String name, String modelName, int noOfWheels) {
+		super(name, modelName, noOfWheels);
+		System.out.println("name:"+name+" ModelName:"+"noOfWheels"+noOfWheels);
+	}
+	
+	
+
+	
+}

@@ -1,0 +1,34 @@
+package com.ust;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+		try {
+			throw new IOException();
+			}
+		 catch (IOException | Exception e) {
+			// TODO: handle exception
+			System.err.println("e"+e);
+			
+		}
+
+	
+}
+class demo{
+	int a,b;
+	demo(){
+		a=10;
+		b=20;
+	}
+	
+	public void print() {
+		System.out.println("a="+a+" b="+b+"");
+	}
+}
+
+

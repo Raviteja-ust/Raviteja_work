@@ -1,0 +1,6 @@
+package com.ust.collection;
+
+public class Employee {
+	String name;
+
+}

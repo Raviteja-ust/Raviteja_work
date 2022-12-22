@@ -1,0 +1,10 @@
+package com.ust.Logical;
+
+public class SumOfOddNumbersUsingReduceFunction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

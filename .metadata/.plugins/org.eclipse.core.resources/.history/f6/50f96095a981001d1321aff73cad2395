@@ -1,0 +1,21 @@
+package com.ust.EmployeeTax;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeDao {
+	
+	public List<EmployeeeModel> getEmployeeDetails()
+	{
+		
+		List<EmployeeeModel> list=new ArrayList<>();
+		list.add(new EmployeeeModel(101, "Ravi", "Hyd", 1000));
+		list.add(new EmployeeeModel(101, "Teja", "Hyd", 2000));
+		list.add(new EmployeeeModel(101, "Sripathi", "Hyd", 3000));
+		list.add(new EmployeeeModel(101, "Rams", "Hyd", 4000));
+		
+		return list;
+		
+	}
+
+}

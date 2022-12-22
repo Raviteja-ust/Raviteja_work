@@ -1,0 +1,20 @@
+package com.ust;
+
+import java.util.Vector;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+
+		//Object Test= new ArrayList().iterator();
+		//System.out.println((Test instanceof List)+",");
+		//System.out.println((Test instanceof Iterator)+",");
+		//System.out.println((Test instanceof ListIterator)+",");
+		Vector obj=new Vector(4,2);
+		obj.addElement(new Integer(3));
+		obj.addElement(new Integer(2));
+		obj.addElement(new Integer(5));
+		System.out.println(obj.elementAt(1));
+	}
+
+}

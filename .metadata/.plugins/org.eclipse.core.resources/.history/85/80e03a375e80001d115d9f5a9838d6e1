@@ -1,0 +1,18 @@
+package com.ust.validation;
+
+import java.util.List;
+
+public class EmployeeServiceValidation {
+	
+	
+	public List<EmpModel> getEmployeeSort() {
+		
+	}
+	
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
