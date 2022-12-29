@@ -1,0 +1,9 @@
+com\user\userMicroservice\model\User.class
+com\user\userMicroservice\dto\Labour.class
+com\user\userMicroservice\controller\UserController.class
+com\user\userMicroservice\dto\UserLabourDto.class
+com\user\userMicroservice\dto\UserDto.class
+com\user\userMicroservice\repository\UserRepository.class
+com\user\userMicroservice\service\UserService.class
+com\user\userMicroservice\UserMicroserviceApplication.class
+com\user\userMicroservice\util\UserGlobalException.class
